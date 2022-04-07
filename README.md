@@ -14,10 +14,12 @@
 ## SageMath
 "cf_estimate.sage" computes an estimation of the ratio of integers of the form
 $(2^b$-smooth integer $) \times$ prime less than $2^\nu$,
+
 $$
     \frac{1}{2^\nu}\left(\sum_{s=b}^\nu 2^s\rho\left(\frac{s}{b}\right)
     (\mathrm{li}(2^{\nu-s})-\mathrm{li}(2^{\nu-s-1})) + \mathrm{li}(\nu-b-1)\right),
 $$
+
 where $\rho$ is the Dickman function and $\mathrm{li}$ is the logarithmic integral.
 
 ## Julia
