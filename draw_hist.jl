@@ -12,7 +12,7 @@ function read_file(filename::String)
 end
 
 N = 251
-for N in [211, 223, 227, 239, 251]
+for N in [211, 223, 227, 239, 251, 1019, 2003]
     ps = []
     for ex in [0, 5, 11]
         data = read_file("data/secret_$(N)_$(ex)_full.txt")

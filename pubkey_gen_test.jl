@@ -121,7 +121,7 @@ end
 
 # main()
 n = 100
-for N in BigInt[211, 223, 227, 239, 251]
+for N in BigInt[211, 223, 227, 239, 251, 1019, 2003]
     println("N=",N)
 
     Is = IdealList(N) 
