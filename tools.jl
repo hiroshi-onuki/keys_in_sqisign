@@ -41,6 +41,10 @@ function SumOfTwoSqures(n::Integer)
         if e % 2 == 1
             l % 4 == 3 && return nothing
             s, t = CornacchiaSmith(l)
+            # randomize (s, t)
+            s = rand([-1, 1])*s
+            t = rand([-1, 1])*t
+            s, t = rand([[s, t], [t, s]])
             a, b = a*s - b*t, a*t + b*s
         end
     end
