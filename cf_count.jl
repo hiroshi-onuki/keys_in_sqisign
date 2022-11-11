@@ -23,7 +23,7 @@ function FactorizationSuccessSumOfSquare(N::BigInt, count::Int)
     ret = 0
     for _ in 1:count
         a = Random.rand(1:BigInt(floor(sqrt(N))))
-        b = Random.rand(1:N - a^2)
+        b = Random.rand(1:BigInt(floor(sqrt(N - a^2))))
         SmoothTimesPrimes(a^2 + b^2) && (ret += 1)
     end
     return ret
